@@ -3,11 +3,157 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WeatherForecast.Pages.MainPage">
 
-    <VerticalStackLayout>
-        <Label Text="Hi there! The nearer position to you that has weather info is"
-               HorizontalOptions="Center"
-               FontSize="20"/>
+    <Grid RowDefinitions="25*, 25*, 25*, 25*"
+          ColumnDefinitions="15*, 15*, 15*, 15*"
+          RowSpacing="1"
+          ColumnSpacing="1"
+          Padding="2">
+        <StackLayout>
+            <Label Text="Location Name"
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="LocationName"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Grid.Column="1">
+            <Label Text="Location Region"
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="LocationRegion"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Grid.Column="2">
+            <Label Text="Location Country"
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="LocationCountry"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Grid.Column="3">
+            <Label Text="Location Timezone"
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="LocationTimezone"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
         
-    </VerticalStackLayout>
+        <StackLayout Grid.Row="1">
+            <Label Text="Current Temperature °C"
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="CurrentTempC"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Grid.Row="1"
+                     Grid.Column="1">
+            <Label Text="Current Temperature °F"
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="CurrentTempF"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Grid.Row="1"
+                     Grid.Column="2">
+            <Label Text="Wind Velocity (Kph)"
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="WindKph"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Grid.Row="1"
+                     Grid.Column="3">
+            <Label Text="Wind Velocity (Mph)"
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="WindMph"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+        
+        <StackLayout Grid.Row="2"
+                     Grid.Column="0">
+            <Label Text="Feels Like °C"
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="FeelsLikeC"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Grid.Row="2"
+                     Grid.Column="1">
+            <Label Text="Wind Gust (Kph)"
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="WindGustKph"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Grid.Row="2"
+                     Grid.Column="2">
+            <Label Text="Wind Direction"
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="WindDirection"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Grid.Row="2"
+                     Grid.Column="3">
+            <Label Text="Wind Degree"
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="WindDegree"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+        
+        <StackLayout Grid.Row="3"
+                     Grid.Column="0">
+            <Label Text="Current Condition"
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="CurrentCondition"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Grid.Row="3"
+                     Grid.Column="1">
+            <Label Text="Clouds"
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="Clouds"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Grid.Row="3"
+                     Grid.Column="2">
+            <Label Text="UV Emissions"
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="UVEmissions"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+        <StackLayout Grid.Row="3"
+                     Grid.Column="3">
+            <Label Text="Humidity"
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="Humidity"
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+        
+        
+        
+
+    </Grid>
 
 </ContentPage>
